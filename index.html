@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Bookland</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.jpg" id="logo" alt="Logo de Bookland">
+      <h1>Bookland</h1>
+      <nav>
+        <a href="index.html" class="menu_principal">[Inicio]</a>
+        <a href="libros.html" class="menu_principal">[Libros]</a>
+        <a href="nuevoLibro.html" class="menu_principal">[Nuevo libro]</a>
+        <a href="faq.html" class="menu_principal">[Faq]</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Bienvenido a Bookland <br>
+         Gestor de tu biblioteca personal</h2>
+      <p>¿Qué quieres hacer?</p>
+      <ul>
+        <li><a href="#nuevolibro">Tengo un nuevo libro</a></li>
+        <li><a href="#libroter">Acabo de terminar un libro</a></li>
+        <li><a href="#libro">Dar una vuelta por Bookland</a></li>
+        <li><a href="#datos">Estadísticas</a></li>
+      </ul>
+
+      <fieldset id="nuevolibro">
+      <legend>Tengo un nuevo libro</legend>
+      <p>Introduce una nueva adquisición en la biblioteca</p>
+      <a href="nuevoLibro.html" class="menu_principal">Introducir</a>
+      </fieldset>
+
+      <fieldset id="libroter">
+      <legend>Acabo de terminar un libro</legend>
+      <p>¿Te ha gustado?</p>
+      <a href="datosLibroTerminado.html" class="menu_principal">Valoración</a>
+      </fieldset>
+
+      <fieldset id="libro">
+      <legend>Dar una vuelta por Bookland</legend>
+      <p>Vamos a ver mis libros</p>
+      <a href="libros.html" class="menu_principal">Pasear</a>
+      </fieldset>
+
+      <aside>
+        <fieldset id="datos">
+        <legend id="estad_titulo">Estadísticas</legend>
+        <p id="estad_1">Nº de libros en Bookland: 137</p>
+        <p id="estad_2">Nº de libros pendientes: 50</p>
+        <p id="estad_3">Nº de libros terminados: 87</p>
+        </fieldset>
+      </aside>
+    </main>
+
+    <footer>
+      <p>2025 [E1] Prototipo web simple_Oier Argote</p>
+    </footer>
+  </body>

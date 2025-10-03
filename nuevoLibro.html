@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="estilo.css">
+      <title>Bookland</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.jpg" id="logo" alt="Logo de Bookland">
+      <h1>Bookland</h1>
+      <nav>
+        <a href="index.html" class="menu_principal">[Inicio]</a>
+        <a href="libros.html" class="menu_principal">[Libros]</a>
+        <a href="nuevoLibro.html" class="menu_principal">[Nuevo libro]</a>
+        <a href="faq.html" class="menu_principal">[Faq]</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Nuevo libro</h2>
+      <form action="form.php" method="post">
+        <fieldset>
+        <legend>Datos Básicos</legend>
+        <label for="id_titulo">Título: </label>
+        <input type="text" name="titulo" id="id_titulo" required><br>
+
+        <label for="id_autor">Autor: </label>
+        <input type="text" name="autor" id="id_autor" required><br>
+
+        <label for="id_editorial">Editorial: </label>
+        <input type="text" name="editorial" id="id_editorial" required><br>
+
+        <label for="genero">Género/Categoría: </label>
+        <input type="text" name="genero" id="genero" required><br>
+
+        <label for="fecha_pub">Fecha de publicación: </label>
+        <input type="date" name="fecha_pub" id="fecha_pub">
+        </fieldset>
+
+        <fieldset>
+        <legend>Datos adicionales</legend>
+        <label for="fecha_comp">Fecha de compra/adquisición: </label>
+        <input type="date" name="fecha_comp" id="fecha_comp">
+
+        <p id="radio_1">Idioma:</p>
+        <input type="radio" name="idioma" value="ingles" id="ingles">
+        <label for="ingles">Inglés</label>
+        
+        <input type="radio" name="idioma" value="castellano" id="castellano">
+        <label for="castellano">Castellano</label>
+        
+        <input type="radio" name="idioma" value="euskera" id="euskera">
+        <label for="euskera">Euskera</label>
+
+        <p id="radio_2">Estado de lectura:</p>
+        <input type="radio" name="estado" value="pendiente" id="pendiente">
+        <label for="pendiente">Pendiente</label>
+        
+        <input type="radio" name="estado" value="leido" id="leido">
+        <label for="leido">Leído</label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Sinopsis</legend>
+        <textarea name="sinopsis" rows="9" cols="50"></textarea>
+        </fieldset>
+
+        <fieldset>
+        <legend>Notas/Información</legend>
+        <textarea name="notas" rows="9" cols="50"></textarea>
+        </fieldset>
+
+        <fieldset>
+        <legend>Valoración</legend>
+        <p id="radio_3">Opinión:</p>
+        <input type="radio" name="val" value="excelente" id="excelente">
+        <label for="excelente">Excelente</label>
+
+        <input type="radio" name="val" value="bueno" id="bueno">
+        <label for="bueno">Bueno</label>
+
+        <input type="radio" name="val" value="mediocre" id="mediocre">
+        <label for="mediocre">Mediocre</label>
+
+        <input type="radio" name="val" value="perdidaDeTiempo" id="perdidaDeTiempo">
+        <label for="perdidaDeTiempo">Pérdida de tiempo</label><br>
+        <br>
+
+        <label for="comentario">Comentario:</label><br>
+        <br>
+        <textarea name="comentario" rows="9" cols="50" id="comentario"></textarea>
+        </fieldset>
+
+        <input type="submit">
+      </form>
+    </main>
+
+      <footer>
+        <p>2025 [E1] Prototipo web simple_Oier Argote</p>
+      </footer>
+  </body>
